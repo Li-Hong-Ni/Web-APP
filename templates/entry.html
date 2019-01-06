@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h1 align="center" >欢迎使用邮编查询地址</h1>
+
+<form method='POST' action='/search4'>
+<table align="center">
+<p style="text-align:center"> 请输入详细地址邮编号，例如输入510900（广州从化区编码）</p>
+<p style="text-align:center">使用此网页提交你的请求：</p>
+
+	<tr>
+		<td>6位编码：</td><td><input name='youbian' type='TEXT' width='60' " style="width:250px;height:25px;">&nbsp;<input value='查询' type='SUBMIT' style="background: rgba(255, 255, 255, 0.7);"></td>
+	</tr>
+</table>
+
+</form>
+
+{% endblock %}
